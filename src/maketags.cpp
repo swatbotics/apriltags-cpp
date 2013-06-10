@@ -208,9 +208,9 @@ int main(int argc, char** argv) {
       height = parse_unit(argv[++i]);
     } else if (optarg == "--margin") {
       double l = parse_unit(argv[++i]);
-      for (int i=0; i<4; ++i) { margins[i] = l; }
+      for (int j=0; j<4; ++j) { margins[j] = l; }
     } else if (optarg == "--margins") {
-      for (int i=0; i<4; ++i) { margins[i] = parse_unit(argv[++i]); }
+      for (int j=0; j<4; ++j) { margins[j] = parse_unit(argv[++i]); }
     } else if (optarg == "--label") {
       draw_labels = true;
     } else if (optarg == "--labelsize") {
