@@ -14,7 +14,7 @@
 #include "CameraUtil.h"
 #include <map>
 #include <stdio.h>
-#include <unistd.h>
+#include <getopt.h>
 
 #ifdef __APPLE__
 #include <Glut/Glut.h>

@@ -11,6 +11,7 @@
 #include <sys/time.h>
 #include <iostream>
 #include <stdio.h>
+#include <getopt.h>
 
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
