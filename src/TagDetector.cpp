@@ -1717,8 +1717,8 @@ void TagDetector::debugShowQuads(const Images& images,
       cv::Mat big;
       at::real scl = resizeToDisplay(small, big);
 
-      for (int i=0; i<4; ++i) {
-        cv::line(big, (quad.p[i]+delta)*scl, (quad.p[(i+1)%4]+delta)*scl, 
+      for (int j=0; j<4; ++j) {
+        cv::line(big, (quad.p[j]+delta)*scl, (quad.p[(j+1)%4]+delta)*scl, 
                  CV_RGB(255,0,0), 1, CV_AA);
       }
 
