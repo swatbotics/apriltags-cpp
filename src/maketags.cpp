@@ -71,9 +71,17 @@ double parse_unit(std::istream& istr) {
     exit(1);
   }
 
-  if (istr.eof()) { return rval; }
+  if (istr.eof()) { 
+    return rval; 
+  }
 
   int i = istr.peek();
+
+  while (isspace(i)) { 
+    istr.get();
+    i = istr.peek();
+  }
+
   if (isalpha(i)) {
     std::string label;
     istr >> label;
