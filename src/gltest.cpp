@@ -13,6 +13,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include "CameraUtil.h"
 #include <map>
+#include <unistd.h>
 
 #ifdef __APPLE__
 #include <Glut/Glut.h>
