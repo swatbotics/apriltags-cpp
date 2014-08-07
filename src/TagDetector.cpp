@@ -512,14 +512,14 @@ void TagDetector::getQuads_MZ(const Images& images,
     
     bool ok = true;
 
-    for (int i=0; i<4; ++i) {
-      const Point& ki = k_gon[4-i-1];
+    for (int j=0; j<4; ++j) {
+      const Point& ki = k_gon[4-j-1];
       if (ki.x() <= 1 || ki.x() >= images.orig.cols-2 || 
           ki.y() <= 1 || ki.y() >= images.orig.rows-2) {
         ok = false;
         break;
       }
-      p[i] = at::Point( ki.x() + 0.5, ki.y() + 0.5 );
+      p[j] = at::Point( ki.x() + 0.5, ki.y() + 0.5 );
     }
 
     if (ok) {
