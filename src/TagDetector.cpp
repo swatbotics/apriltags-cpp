@@ -1164,8 +1164,8 @@ void TagDetector::getQuads_AT(const Images& images,
 
       for (size_t j=0; j<xyw.size(); ++j) {
         const XYW& pi = xyw[j];
-        const float fmax = 0.5;
-        float f = std::min(pi.w, fmax) / fmax;
+        const at::real fmax = 0.5;
+        at::real f = std::min(pi.w, fmax) / fmax;
         assert( pi.x >= 0 && pi.x < m.cols );
         assert( pi.y >= 0 && pi.y < m.rows );
         m(pi.y, pi.x) = cv::Vec3b(c[0]*f, c[1]*f, c[2]*f);
