@@ -2295,7 +2295,7 @@ static const TagInfoArray& getFamilies() {
     ADD_INFO(25, 7, tag25h7);
     ADD_INFO(25, 9, tag25h9);
     ADD_INFO(36, 9, tag36h9);
-    ADD_INFO(36, 10, tag3610);
+    ADD_INFO(36, 10, tag36h10);
     ADD_INFO(36, 11, tag36h11);
 
   }
