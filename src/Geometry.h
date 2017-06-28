@@ -13,7 +13,7 @@
 // classes all used by the TagDetector class.
 
 #include "AprilTypes.h"
-
+#include <map>
 //////////////////////////////////////////////////////////////////////
 // Struct for a line segment, which holds start/end points, length,
 // angle.  A segment may also have a number of children, as well as a
